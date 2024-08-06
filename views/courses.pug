@@ -1,0 +1,9 @@
+html
+  head
+    title title
+  body
+    h1 Courses
+    ul
+    each course in courses
+      li= course.course
+          a(href='/registercourse/'+course['_id']) Register course

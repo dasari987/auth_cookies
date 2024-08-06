@@ -1,0 +1,11 @@
+html
+  head
+    title title
+  body
+    h1 Course Details of #{course.course}
+    h2 Course : #{course.course}
+    img(src=course.image, style='width:300px' alt="loading")
+    h2 Price : #{course.price}
+    h2 Duration : #{course.duration}
+    h2 Trainer : #{course.trainer}
+    a(href=`/register/${course['_id']}`) Register course here
